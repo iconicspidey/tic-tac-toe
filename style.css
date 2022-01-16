@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(34, 32, 43, 0.986);
+}
+nav {
+  height: 70px;
+  background-color: rgb(54, 58, 61);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*  */
+.turn {
+  font-family: fantasy;
+  font-size: 3rem;
+}
+.player {
+  width: 100px;
+  height: 30px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffc;
+  font-size: 2rem;
+  gap: 10px;
+}
+
+.wrapper {
+  margin: 100px auto;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.box {
+  max-width: 270px;
+  height: 270px;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(3, 33%);
+}
+.box > div {
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.5rem;
+  font-family: cursive;
+  text-shadow: none;
+  padding-bottom: 20px;
+}
+.box div:nth-child(1),
+.box div:nth-child(2),
+.box div:nth-child(3) {
+  border-top: transparent;
+}
+.box div:nth-child(7),
+.box div:nth-child(8),
+.box div:nth-child(9) {
+  border-bottom: transparent;
+}
+.box div:nth-child(3),
+.box div:nth-child(6),
+.box div:nth-child(9) {
+  border-right: transparent;
+}
+.box div:nth-child(1),
+.box div:nth-child(4),
+.box div:nth-child(7) {
+  border-left: transparent;
+}
+
+button {
+  width: 80px;
+  height: 40px;
+  font-size: 1.3rem;
+  background-color: rgb(52, 54, 138);
+  color: #fff;
+  border-radius: 5px;
+  display: none;
+  margin: 10px auto;
+}
+.x-player {
+  color: blueviolet;
+}
+.o-player {
+  color: brown;
+}
+.register {
+  font-size: 2rem;
+  color: #ffc;
+  width: 100%;
+  text-align: center;
+  margin: 10px auto;
+  gap: 10px;
+  display: none;
+}
